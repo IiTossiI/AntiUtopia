@@ -1,0 +1,12 @@
+body {
+    background-image: url("3.png");
+    color: white;
+}
+span {
+    font-family: "Urbanist", sans-serif;
+    font-size: 2em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
