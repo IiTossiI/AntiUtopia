@@ -1,28 +1,50 @@
+a {
+    color: dodgerblue;
+}
 body {
     background-image: url("bg.png");
     color: white;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.2em;
+}
+body > .main {
+    left: 50%;
+    position: absolute;
+    top: 8px;
+    transform: translate(-50%, 0%);
+    width: 768px;
 }
 button {
-    background-color: rgba(255, 255, 255, 0);
-    border: solid 2px white;
-    bottom: 8px;
-    color: white;
-    font-family: "Urbanist", sans-serif;
-    font-size: 2em;
-    left: 50%;
-    position: absolute;
-    transition: 0.25s;
+    background-color: white;
+    border: none;
+    border-bottom: solid 4px #AAAAAA;
+    border-top: solid 0px #444444;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.25s linear;
 }
 button:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
+    border-bottom: solid 0px #AAAAAA;
+    border-top: solid 4px #444444;
 }
-span {
-    font-family: "Urbanist", sans-serif;
-    font-size: 2em;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+.latest {
+    background-color: red;
+    border-bottom: solid 4px #AA0000;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+.main > .main {
+    background-color: #444444;
+    border-bottom: solid 4px #222222;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+.news {
+    border-top: solid 1px #222222;
+    margin-top: 4px;
+    padding-top: 4px;
 }
