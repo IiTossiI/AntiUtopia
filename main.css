@@ -30,6 +30,9 @@ button:hover {
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
+img {
+    width: 100%;
+}
 .latest {
     background-color: red;
     border-bottom: solid 4px #AA0000;
