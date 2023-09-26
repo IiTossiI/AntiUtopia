@@ -1,4 +1,21 @@
+var rules = document.querySelector(".rules")
 var news = document.querySelector(".news")
+
+fetch("https://antiutopia.glitch.me/server.rules").then(response => {
+    if (response.status == 200) {
+        response.text().then(data => {
+            data = data.split("\n")
+            rules.innerHTML = ""
+            data.forEach(rule => {
+                rules.innerHTML += "<span>" + rule + "</span><br><hr>"
+            })
+            rules.innerHTML = rules.innerHTML.slice(0, -8)
+        })
+    } else {
+        rules.innerHTML = "<span>Unable to load rules</span>"
+    }
+})
+
 
 fetch("https://antiutopia.glitch.me/latest.news").then(response => {
     if (response.status == 200) {

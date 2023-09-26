@@ -30,7 +30,7 @@ button:hover {
     border-bottom: solid 0px #AAAAAA;
     border-top: solid 4px #444444;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
 }
 img {
@@ -55,4 +55,12 @@ img {
     padding-bottom: 4px;
     margin-top: 4px;
     padding-top: 4px;
+}
+.rules {
+    background-color: #333333;
+    border: solid 1px black;
+    padding: 8px;
+}
+.rules > hr {
+    border-color: black;
 }
